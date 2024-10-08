@@ -4,6 +4,6 @@ import { frontendUrl } from "./environment.js";
 export const isSelfHostedInstance =
   process.env.SELF_HOSTED_HASH === "true" ||
   process.env.NEXT_PUBLIC_SELF_HOSTED_HASH === "true" ||
-  !["http://localhost:3000", "https://app.hash.ai", "https://hash.ai"].includes(
+  !["http://localhost:3455", "https://app.hash.ai", "https://hash.ai"].includes(
     frontendUrl,
   );

@@ -356,7 +356,7 @@ const main = async () => {
          *
          * When setting the value of the `Access-Control-Allow-Origin` header in
          * the Ory Kratos configuration, the frontend URL is included twice in the
-         * header for some reason (e.g. ["https://localhost:3000", "https://localhost:3000"]),
+         * header for some reason (e.g. ["https://localhost:3455", "https://localhost:3455"]),
          * which is also not permitted by browsers when including credentials in requests.
          *
          * Therefore we manually set the `Access-Control-Allow-Origin` header to the

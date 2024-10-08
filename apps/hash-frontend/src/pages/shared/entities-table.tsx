@@ -123,7 +123,7 @@ export const EntitiesTable: FunctionComponent<{
        */
       (entityTypes?.length &&
         entityTypes.every(
-          ({ $id }) => isSpecialEntityTypeLookup?.[$id]?.isFile,
+          ({ $id }) => isSpecialEntityTypeLookup?.[$id].isFile,
         )),
     [entityTypeBaseUrl, entityTypeId, entityTypes, isSpecialEntityTypeLookup],
   );

@@ -33,7 +33,7 @@ export const EntityTypeMenu: FunctionComponent<EntityTypeMenuProps> = ({
 
   const { isSpecialEntityTypeLookup } = useEntityTypesContextRequired();
 
-  const isLinkEntityType = isSpecialEntityTypeLookup?.[entityTypeId]?.isLink;
+  const isLinkEntityType = isSpecialEntityTypeLookup?.[entityTypeId].isLink;
 
   return (
     <Menu {...bindMenu(popupState)}>

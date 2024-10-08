@@ -90,7 +90,7 @@ pub struct ServerArgs {
     ///   `(?P<kind>(?:data-type)|(?:property-type)|(?:entity-type))`
     #[clap(
         long,
-        default_value_t = Regex::new(r"http://localhost:3000/@(?P<shortname>[\w-]+)/types/(?P<kind>(?:data-type)|(?:property-type)|(?:entity-type))/[\w\-_%]+/").unwrap(),
+        default_value_t = Regex::new(r"http://localhost:3455/@(?P<shortname>[\w-]+)/types/(?P<kind>(?:data-type)|(?:property-type)|(?:entity-type))/[\w\-_%]+/").unwrap(),
         env = "HASH_GRAPH_ALLOWED_URL_DOMAIN_PATTERN",
     )]
     pub allowed_url_domain: Regex,

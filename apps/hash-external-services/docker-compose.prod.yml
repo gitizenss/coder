@@ -5,7 +5,7 @@ services:
       HASH_SPICEDB_PG_PASSWORD: "${HASH_SPICEDB_PG_PASSWORD}"
       HASH_SPICEDB_PG_DATABASE: "${HASH_SPICEDB_PG_DATABASE}"
     ports:
-      - "${POSTGRES_PORT}:5432"
+      - "${POSTGRES_PORT}:54334"
 
   kratos-migrate:
     build:
@@ -259,4 +259,4 @@ services:
       API_ORIGIN: "http://hash-api:5001"
 
     ports:
-      - "3000:3000"
+      - "3000:3455"

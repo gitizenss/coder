@@ -143,7 +143,7 @@ Before migrating, you must start an SSH tunnel through the bastion host to acces
 $ terraform output -raw rds_hostname
 h-hash-prod-usea1-pg.*.us-east-1.rds.amazonaws.com # * = some unique ID for your RDS instance
 ..
-$ ./ssh_bastion.sh -N -L 5554:h-hash-dev-usea1-pg.*.us-east-1.rds.amazonaws.com:5432
+$ ./ssh_bastion.sh -N -L 5554:h-hash-dev-usea1-pg.*.us-east-1.rds.amazonaws.com:54334
 ..
 ```
 

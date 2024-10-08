@@ -50,7 +50,7 @@ const generateTypes = async (
       if (typeId.startsWith("https://hash.ai/")) {
         const rewrittenTypeId = typeId.replace(
           "https://hash.ai/",
-          "http://localhost:3000/",
+          "http://localhost:3455/",
         ) as VersionedUrl;
 
         return rewrittenTypeId;

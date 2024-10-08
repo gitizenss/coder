@@ -1,19 +1,7 @@
 services:
   postgres:
     ports:
-      - "${POSTGRES_PORT}:5432"
-
-  minio:
-    image: quay.io/minio/minio
-    command: server /data --console-address ":9001"
-    environment:
-      MINIO_ROOT_USER: ${AWS_S3_UPLOADS_ACCESS_KEY_ID}
-      MINIO_ROOT_PASSWORD: ${AWS_S3_UPLOADS_SECRET_ACCESS_KEY}
-    ports:
-      - 9000:9000
-      - 9001:9001
-    volumes:
-      - ../../var/uploads/s3:/data
+      - "${POSTGRES_PORT}:54334"
 
   minio-ensure-bucket-exists:
     image: minio/mc

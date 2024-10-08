@@ -240,7 +240,7 @@ async fn uri() {
     .expect("failed to serialize uri type");
 
     validate_data(
-        json!("localhost:3000"),
+        json!("localhost:3455"),
         &url_type,
         [graph_test_data::data_type::VALUE_V1],
         ValidateEntityComponents::full(),
@@ -597,7 +597,7 @@ async fn hostname() {
     .expect("validation failed");
 
     _ = validate_data(
-        json!("localhost:3000"),
+        json!("localhost:3455"),
         &hostname_type,
         [graph_test_data::data_type::VALUE_V1],
         ValidateEntityComponents::full(),

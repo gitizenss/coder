@@ -132,7 +132,7 @@ To run HASH locally, please follow these steps:
    yarn start
    ```
 
-   This will start backend and frontend in a single terminal. Once you see http://localhost:3000, the frontend end is ready to visit there.
+   This will start backend and frontend in a single terminal. Once you see http://localhost:3455, the frontend end is ready to visit there.
    The API is online once you see `localhost:5001` in the terminal. Both must be online for the frontend to function.
 
    You can also launch parts of the app in separate terminals, e.g.:
@@ -523,7 +523,7 @@ If the service should report metrics to a StatsD server, the following variables
 
 ### Others
 
-- `FRONTEND_URL`: URL of the frontend website for links (default: `http://localhost:3000`)
+- `FRONTEND_URL`: URL of the frontend website for links (default: `http://localhost:3455`)
 - `NOTIFICATION_POLL_INTERVAL`: the interval in milliseconds at which the frontend will poll for new notifications, or 0 for no polling. (default: `10_000`)
 - `HASH_INTEGRATION_QUEUE_NAME` The name of the Redis queue which updates to entities are published to
 - `HASH_REALTIME_PORT`: Realtime service listening port. (default: `3333`)

@@ -78,7 +78,7 @@ export const returnTypeAsJson = async (request: NextRequest) => {
   const urlObject = new URL(url);
   const shouldServeHashAiType =
     frontendUrl === "https://app.hash.ai" ||
-    (frontendUrl === "http://localhost:3000" &&
+    (frontendUrl === "http://localhost:3455" &&
       ["hash", "google", "linear"].includes(
         urlObject.pathname.split("/")[1]!.slice(1),
       ));

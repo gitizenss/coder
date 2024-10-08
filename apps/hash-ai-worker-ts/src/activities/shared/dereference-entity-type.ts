@@ -310,7 +310,7 @@ export const dereferenceEntityType = <
 
   for (const entityType of entityTypeWithAncestors) {
     for (const requiredProp of entityType.schema.required ?? []) {
-      requiredProperties.add(requiredProp as BaseUrl);
+      requiredProperties.add(requiredProp);
     }
 
     /**

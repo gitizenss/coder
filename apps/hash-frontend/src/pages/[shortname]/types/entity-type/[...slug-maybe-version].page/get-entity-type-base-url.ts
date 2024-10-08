@@ -13,7 +13,7 @@ export const getEntityTypeBaseUrl = (
     ([...systemTypeWebShortnames, "ftse"].includes(
       namespaceWithAt.slice(1) as SystemTypeWebShortname,
     ) &&
-      frontendUrl === "http://localhost:3000") ||
+      frontendUrl === "http://localhost:3455") ||
     frontendUrl === "https://app.hash.ai"
       ? "https://hash.ai"
       : frontendUrl

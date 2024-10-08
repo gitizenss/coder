@@ -75,7 +75,7 @@ export const ArrayEditor: ValueCellEditorComponent = ({
     }
 
     if (expectedTypes.length === 1) {
-      const expectedType = guessEditorTypeFromExpectedType(expectedTypes[0]!);
+      const expectedType = guessEditorTypeFromExpectedType(expectedTypes[0]);
 
       if (getEditorSpecs(expectedType).arrayEditException === "no-edit-mode") {
         return "";

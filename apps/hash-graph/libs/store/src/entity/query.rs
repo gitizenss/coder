@@ -340,11 +340,11 @@ pub enum EntityQueryPath<'p> {
     ///     "properties",
     ///     "https://blockprotocol.org/@blockprotocol/types/property-type/length/",
     ///     "convert",
-    ///     "http://localhost:3000/@alice/types/data-type/meter/"
+    ///     "http://localhost:3455/@alice/types/data-type/meter/"
     /// ]))?;
     /// # assert_eq!(
     /// #     path.to_string(),
-    /// #     r#"propertyMetadata.$."value"."https://blockprotocol.org/@blockprotocol/types/property-type/length/"."metadata"."canonical"."http://localhost:3000/@alice/types/data-type/meter/""#
+    /// #     r#"propertyMetadata.$."value"."https://blockprotocol.org/@blockprotocol/types/property-type/length/"."metadata"."canonical"."http://localhost:3455/@alice/types/data-type/meter/""#
     /// # );
     /// # Ok::<(), serde_json::Error>(())
     /// ```

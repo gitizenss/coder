@@ -189,7 +189,7 @@ services:
       DB: "postgres12"
       DBNAME: "${HASH_TEMPORAL_PG_DATABASE}"
       VISIBILITY_DBNAME: "${HASH_TEMPORAL_VISIBILITY_PG_DATABASE}"
-      DB_PORT: "5432"
+      DB_PORT: "54334"
       # Intentionally use the POSTGRES user as it's the "superadmin" which has access to schema
       POSTGRES_USER: "${POSTGRES_USER}"
       POSTGRES_PWD: "${POSTGRES_PASSWORD}"
@@ -230,7 +230,7 @@ services:
       DB: "postgres12"
       DBNAME: "${HASH_TEMPORAL_PG_DATABASE}"
       VISIBILITY_DBNAME: "${HASH_TEMPORAL_VISIBILITY_PG_DATABASE}"
-      DB_PORT: "5432"
+      DB_PORT: "54334"
       POSTGRES_USER: "${HASH_TEMPORAL_PG_USER}"
       POSTGRES_PWD: "${HASH_TEMPORAL_PG_PASSWORD}"
       POSTGRES_SEEDS: "postgres" # the hostname of the postgres container
@@ -257,7 +257,7 @@ services:
       DB: "postgres12"
       DBNAME: "${HASH_TEMPORAL_PG_DATABASE}"
       VISIBILITY_DBNAME: "${HASH_TEMPORAL_VISIBILITY_PG_DATABASE}"
-      DB_PORT: "5432"
+      DB_PORT: "54334"
       # Intentionally use the POSTGRES user as it's the "superadmin" which has access to schema
       POSTGRES_USER: "${POSTGRES_USER}"
       POSTGRES_PWD: "${POSTGRES_PASSWORD}"
@@ -279,7 +279,7 @@ services:
         condition: service_completed_successfully
     environment:
       TEMPORAL_ADDRESS: temporal:7233
-      TEMPORAL_CORS_ORIGINS: http://localhost:3000
+      TEMPORAL_CORS_ORIGINS: http://localhost:3455
     security_opt:
       - no-new-privileges:true
     ports:

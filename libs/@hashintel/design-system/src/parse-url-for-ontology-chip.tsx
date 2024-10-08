@@ -11,7 +11,7 @@ export const parseUrlForOntologyChip = (url: VersionedUrl) => {
   const parsed = validationResult.inner;
   const parsedUrl = new URL(parsed);
   const domain =
-    parsedUrl.host === "localhost:3000" ? "localhost" : parsedUrl.host;
+    parsedUrl.host === "localhost:3455" ? "localhost" : parsedUrl.host;
   const path = parsedUrl.pathname.slice(1);
 
   return { domain, path };

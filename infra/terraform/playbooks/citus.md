@@ -65,7 +65,7 @@ $ superuser_password=$PASSWORD
 
 ```console
 $ docker run --rm \
-  -p 5432:5432 \
+  -p 5432:54334 \
   -e POSTGRES_PASSWORD=$superuser_password \
   -e POSTGRES_USER=superuser \
   -e POSTGRES_DB=postgres \

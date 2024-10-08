@@ -127,7 +127,7 @@ export const mapEdges = (edges: EdgesGraphApi): Edges => {
     const result = validateBaseUrl(baseId);
     if (result.type === "Ok") {
       // ------------ Ontology Type case ----------------
-      const baseUrl = result.inner as BaseUrl;
+      const baseUrl = result.inner;
 
       mappedEdges[baseUrl] = Object.fromEntries(
         Object.entries(inner).map(([version, outwardEdges]) => {

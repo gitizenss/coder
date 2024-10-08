@@ -73,7 +73,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
   "schema": {
     "$schema": "https://blockprotocol.org/types/modules/graph/0.3/schema/entity-type",
     "kind": "entityType",
-    "$id": "http://localhost:3000/@snapshot/types/entity-type/link/v/1",
+    "$id": "http://localhost:3455/@snapshot/types/entity-type/link/v/1",
     "type": "object",
     "title": "Object",
     "allOf": [{ "$ref": "https://blockprotocol.org/@blockprotocol/types/entity-type/link/v/1" }],
@@ -126,17 +126,17 @@ X-Authenticated-User-Actor-Id: {{account_id}}
   "schema": {
     "$schema": "https://blockprotocol.org/types/modules/graph/0.3/schema/entity-type",
     "kind": "entityType",
-    "$id": "http://localhost:3000/@snapshot/types/entity-type/object/v/1",
+    "$id": "http://localhost:3455/@snapshot/types/entity-type/object/v/1",
     "type": "object",
     "title": "Object",
     "properties": {},
     "links": {
-      "http://localhost:3000/@snapshot/types/entity-type/link/v/1": {
+      "http://localhost:3455/@snapshot/types/entity-type/link/v/1": {
         "type": "array",
         "items": {
           "oneOf": [
             {
-              "$ref": "http://localhost:3000/@snapshot/types/entity-type/object/v/1"
+              "$ref": "http://localhost:3455/@snapshot/types/entity-type/object/v/1"
             }
           ]
         }
@@ -189,7 +189,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/object/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/object/v/1"],
   "entityUuid": "0000000A-0001-0000-0000-000000000000",
   "draft": false,
   "relationships": [{
@@ -217,7 +217,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/object/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/object/v/1"],
   "entityUuid": "0000000B-0001-0000-0000-000000000000",
   "draft": false,
   "relationships": [{
@@ -245,7 +245,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/object/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/object/v/1"],
   "entityUuid": "0000000C-0001-0000-0000-000000000000",
   "draft": false,
   "relationships": [{
@@ -273,7 +273,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/object/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/object/v/1"],
   "entityUuid": "0000000D-0001-0000-0000-000000000000",
   "draft": false,
   "relationships": [{
@@ -301,7 +301,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000AB-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_a}}",
@@ -332,7 +332,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000BC-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_b}}",
@@ -363,7 +363,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000CD-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_c}}",
@@ -394,7 +394,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000DA-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_d}}",
@@ -426,7 +426,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000BA-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_b}}",
@@ -459,7 +459,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000CB-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_c}}",
@@ -492,7 +492,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000DC-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_d}}",
@@ -525,7 +525,7 @@ X-Authenticated-User-Actor-Id: {{account_id}}
 {
   "ownedById": "{{account_id}}",
   "properties": {},
-  "entityTypeIds": ["http://localhost:3000/@snapshot/types/entity-type/link/v/1"],
+  "entityTypeIds": ["http://localhost:3455/@snapshot/types/entity-type/link/v/1"],
   "entityUuid": "000000AD-0001-0000-0000-000000000000",
   "linkData": {
     "leftEntityId": "{{entity_a}}",

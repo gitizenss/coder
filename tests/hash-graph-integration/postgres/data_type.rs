@@ -267,13 +267,13 @@ async fn inheritance() {
             entity_uuid: None,
             decision_time: None,
             entity_type_ids: HashSet::from([VersionedUrl::from_str(
-                "http://localhost:3000/@alice/types/entity-type/line/v/1",
+                "http://localhost:3455/@alice/types/entity-type/line/v/1",
             )
             .expect("couldn't construct Base URL")]),
             properties: PropertyWithMetadataObject {
                 value: HashMap::from([(
                     BaseUrl::new(
-                        "http://localhost:3000/@alice/types/property-type/length/".to_owned(),
+                        "http://localhost:3455/@alice/types/property-type/length/".to_owned(),
                     )
                     .expect("couldn't construct Base URL"),
                     PropertyWithMetadata::Value(PropertyWithMetadataValue {
@@ -306,13 +306,13 @@ async fn inheritance() {
             entity_uuid: None,
             decision_time: None,
             entity_type_ids: HashSet::from([VersionedUrl::from_str(
-                "http://localhost:3000/@alice/types/entity-type/line/v/1",
+                "http://localhost:3455/@alice/types/entity-type/line/v/1",
             )
             .expect("couldn't construct Base URL")]),
             properties: PropertyWithMetadataObject {
                 value: HashMap::from([(
                     BaseUrl::new(
-                        "http://localhost:3000/@alice/types/property-type/length/".to_owned(),
+                        "http://localhost:3455/@alice/types/property-type/length/".to_owned(),
                     )
                     .expect("couldn't construct Base URL"),
                     PropertyWithMetadata::Value(PropertyWithMetadataValue {
@@ -344,12 +344,12 @@ async fn inheritance() {
         entity_uuid: None,
         decision_time: None,
         entity_type_ids: HashSet::from([VersionedUrl::from_str(
-            "http://localhost:3000/@alice/types/entity-type/line/v/1",
+            "http://localhost:3455/@alice/types/entity-type/line/v/1",
         )
         .expect("couldn't construct Base URL")]),
         properties: PropertyWithMetadataObject {
             value: HashMap::from([(
-                BaseUrl::new("http://localhost:3000/@alice/types/property-type/length/".to_owned())
+                BaseUrl::new("http://localhost:3455/@alice/types/property-type/length/".to_owned())
                     .expect("couldn't construct Base URL"),
                 PropertyWithMetadata::Value(PropertyWithMetadataValue {
                     value: json!(10),

@@ -72,7 +72,7 @@ export const TypeGraphVisualizer = ({
 
       const entityTypeId = schema.$id;
 
-      const isLink = isSpecialEntityTypeLookup?.[entityTypeId]?.isLink;
+      const isLink = isSpecialEntityTypeLookup?.[entityTypeId].isLink;
       if (isLink) {
         /**
          * We'll add the links as we process each entity type – this means that any link types which are unused won't
@@ -125,7 +125,7 @@ export const TypeGraphVisualizer = ({
 
           if (destinationTypeIds) {
             for (const destinationTypeId of destinationTypeIds) {
-              if (isSpecialEntityTypeLookup?.[destinationTypeId]?.isLink) {
+              if (isSpecialEntityTypeLookup?.[destinationTypeId].isLink) {
                 /**
                  * If the destination is itself a link, we need to account for the multiple places the destination link
                  * may appear. We won't have the full set until we've gone through all the non-link entity types,

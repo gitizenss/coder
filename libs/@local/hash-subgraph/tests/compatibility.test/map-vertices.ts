@@ -374,7 +374,7 @@ export const mapVertices = (vertices: VerticesGraphApi): Vertices => {
     const result = validateBaseUrl(baseId);
     if (result.type === "Ok") {
       // ------------ Ontology Type case ----------------
-      const baseUrl = result.inner as BaseUrl;
+      const baseUrl = result.inner;
 
       mappedVertices[baseUrl] = Object.fromEntries(
         Object.entries(inner).map(([version, vertex]) => {

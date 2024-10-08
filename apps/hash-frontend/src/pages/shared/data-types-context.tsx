@@ -59,9 +59,10 @@ export const DataTypesContextProvider = ({ children }: PropsWithChildren) => {
     ({ dataTypeId, value }: { dataTypeId: VersionedUrl; value: JsonValue }) => {
       const { baseUrl, version } = componentsFromVersionedUrl(dataTypeId);
 
-      const dataType = data?.queryDataTypes.vertices[baseUrl]?.[
-        version as unknown as OntologyTypeRevisionId
-      ]?.inner.schema as DataTypeWithMetadata["schema"] | undefined;
+      const dataType =
+        data?.queryDataTypes.vertices[baseUrl][
+          version as unknown as OntologyTypeRevisionId
+        ]?.inner.schema;
 
       if (!dataType) {
         return formatDataValue(value?.toString() ?? "null", undefined);

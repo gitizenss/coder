@@ -98,7 +98,7 @@ export const EntityTypeSelector = <Multiple extends boolean = false>({
         uniqueId: $id,
         icon:
           icon ??
-          (isSpecialEntityTypeLookup?.[$id]?.isLink ? (
+          (isSpecialEntityTypeLookup?.[$id].isLink ? (
             <LinkTypeIcon />
           ) : (
             <EntityTypeIcon />

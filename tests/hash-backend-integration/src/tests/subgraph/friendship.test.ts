@@ -86,11 +86,11 @@ export const temporalAxesForTimestamp = (
 };
 
 const nameProperty =
-  "http://localhost:3000/@alice/types/property-type/name/" as BaseUrl;
+  "http://localhost:3455/@alice/types/property-type/name/" as BaseUrl;
 const personTypeBaseId =
-  "http://localhost:3000/@alice/types/entity-type/person/" as BaseUrl;
+  "http://localhost:3455/@alice/types/entity-type/person/" as BaseUrl;
 const friendshipTypeBaseId =
-  "http://localhost:3000/@alice/types/entity-type/friendship/" as BaseUrl;
+  "http://localhost:3455/@alice/types/entity-type/friendship/" as BaseUrl;
 
 const aliceFilter: GetEntitySubgraphRequest["filter"] = {
   startsWith: [
@@ -235,15 +235,15 @@ describe("Ontology queries", () => {
         .map(({ schema }) => schema.$id)
         .sort(),
     ).toStrictEqual([
-      "http://localhost:3000/@alice/types/data-type/number/v/1",
-      "http://localhost:3000/@alice/types/data-type/text/v/1",
-      "http://localhost:3000/@alice/types/data-type/text/v/2",
+      "http://localhost:3455/@alice/types/data-type/number/v/1",
+      "http://localhost:3455/@alice/types/data-type/text/v/1",
+      "http://localhost:3455/@alice/types/data-type/text/v/2",
     ]);
   });
 
   it("archives/unarchives data types", async () => {
     const dataTypeId: VersionedUrl =
-      "http://localhost:3000/@alice/types/data-type/number/v/1";
+      "http://localhost:3455/@alice/types/data-type/number/v/1";
 
     const request: GetDataTypesParams = {
       filter: {
@@ -335,14 +335,14 @@ describe("Ontology queries", () => {
         .map(({ schema }) => schema.$id)
         .sort(),
     ).toStrictEqual([
-      "http://localhost:3000/@alice/types/property-type/name/v/1",
-      "http://localhost:3000/@alice/types/property-type/name/v/2",
+      "http://localhost:3455/@alice/types/property-type/name/v/1",
+      "http://localhost:3455/@alice/types/property-type/name/v/2",
     ]);
   });
 
   it("archives/unarchives property types", async () => {
     const propertyTypeId: VersionedUrl =
-      "http://localhost:3000/@alice/types/property-type/name/v/1";
+      "http://localhost:3455/@alice/types/property-type/name/v/1";
 
     const request: GetPropertyTypesParams = {
       filter: {
@@ -437,9 +437,9 @@ describe("Ontology queries", () => {
 
     const entityTypes = getRoots(subgraph);
     expect(entityTypes.map(({ schema }) => schema.$id).sort()).toStrictEqual([
-      "http://localhost:3000/@alice/types/entity-type/friendship/v/1",
-      "http://localhost:3000/@alice/types/entity-type/person/v/1",
-      "http://localhost:3000/@alice/types/entity-type/person/v/2",
+      "http://localhost:3455/@alice/types/entity-type/friendship/v/1",
+      "http://localhost:3455/@alice/types/entity-type/person/v/1",
+      "http://localhost:3455/@alice/types/entity-type/person/v/2",
       "https://blockprotocol.org/@blockprotocol/types/entity-type/link/v/1",
     ]);
 
@@ -447,7 +447,7 @@ describe("Ontology queries", () => {
       entityTypes.find(
         ({ schema }) =>
           schema.$id ===
-          "http://localhost:3000/@alice/types/entity-type/person/v/1",
+          "http://localhost:3455/@alice/types/entity-type/person/v/1",
       )!.metadata.labelProperty,
     ).toBeUndefined();
 
@@ -455,15 +455,15 @@ describe("Ontology queries", () => {
       entityTypes.find(
         ({ schema }) =>
           schema.$id ===
-          "http://localhost:3000/@alice/types/entity-type/person/v/2",
+          "http://localhost:3455/@alice/types/entity-type/person/v/2",
       )!.metadata.labelProperty,
-    ).toStrictEqual("http://localhost:3000/@alice/types/property-type/name/");
+    ).toStrictEqual("http://localhost:3455/@alice/types/property-type/name/");
   });
 });
 
 it("archives/unarchives entity types", async () => {
   const entityTypeId: VersionedUrl =
-    "http://localhost:3000/@alice/types/entity-type/person/v/1";
+    "http://localhost:3455/@alice/types/entity-type/person/v/1";
 
   const request: GetEntityTypesParams = {
     filter: {

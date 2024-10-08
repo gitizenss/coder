@@ -13,9 +13,9 @@ session:
   lifespan: 26280h # 24 h * 365 days * 3 years
 
 selfservice:
-  default_browser_return_url: http://localhost:3000/
+  default_browser_return_url: http://localhost:3455/
   allowed_return_urls:
-    - http://localhost:3000
+    - http://localhost:3455
 
   methods:
     password:
@@ -27,7 +27,7 @@ selfservice:
         # but we're using the code method, so we disable this method for usage.
         enabled: false
         # Set through SELFSERVICE_METHODS_LINK_CONFIG_BASE_URL
-        base_url: http://localhost:3000/api/ory
+        base_url: http://localhost:3455/api/ory
     code:
       config:
         # and make sure to enable the code method.
@@ -35,19 +35,19 @@ selfservice:
 
   flows:
     error:
-      ui_url: http://localhost:3000/error
+      ui_url: http://localhost:3455/error
 
     logout:
       after:
-        default_browser_return_url: http://localhost:3000/signin
+        default_browser_return_url: http://localhost:3455/signin
 
     login:
-      ui_url: http://localhost:3000/signin
+      ui_url: http://localhost:3455/signin
       lifespan: 10m
 
     registration:
       lifespan: 10m
-      ui_url: http://localhost:3000/signup
+      ui_url: http://localhost:3455/signup
       after:
         password:
           hooks:
@@ -76,18 +76,18 @@ selfservice:
       use: code
       lifespan: 48h
       # Set though SELFSERVICE_FLOWS_VERIFICATION_UI_URL
-      ui_url: http://localhost:3000/verification
+      ui_url: http://localhost:3455/verification
       enabled: true
 
     recovery:
       enabled: true
       # Set through SELFSERVICE_FLOWS_RECOVERY_UI_URL
-      ui_url: http://localhost:3000/recovery
+      ui_url: http://localhost:3455/recovery
       use: code
 
     settings:
       # Set through SELFSERVICE_FLOWS_SETTINGS_UI_URL
-      ui_url: http://localhost:3000/change-password
+      ui_url: http://localhost:3455/change-password
 
 log:
   level: debug

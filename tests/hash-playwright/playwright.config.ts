@@ -18,7 +18,7 @@ const config: PlaywrightTestConfig = {
   retries: ci ? 2 : 0, // 2 retries in CI compensates flakiness, 0 is more helpful locally
   testDir: "tests",
   use: {
-    baseURL: "http://localhost:3000",
+    baseURL: "http://localhost:3455",
 
     // Playwright docs recommend "on-first-retry" as it is slightly more resource-efficient.
     // We can switch to this option when we have more tests and most of them are stable.
